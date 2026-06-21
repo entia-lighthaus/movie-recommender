@@ -13,7 +13,7 @@ DATA_DIR = Path("data")
 train = pd.read_csv(DATA_DIR / "train.csv")
 test  = pd.read_csv(DATA_DIR / "test.csv")
 
-print("=" * 60)
+print("=" * 60) 
 print("TRAIN.CSV")
 print("=" * 60)
 print(train.head())
@@ -30,3 +30,6 @@ print("=" * 60)
 print(test.head())
 print(f"\nShape: {test.shape}")
 print(f"Columns: {list(test.columns)}")
+
+# use python inspect_data.py to run this script and see the output.
+# Note that the test set has no "rating" column, which is what we're trying to predict.
